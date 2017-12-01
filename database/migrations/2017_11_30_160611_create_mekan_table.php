@@ -17,7 +17,7 @@ class CreateMekanTable extends Migration
             $table->increments('id');
             $table->string('ad');
             $table->text('icerik');
-            $table->string('resim_yol');
+            $table->string('resim_yol')->nulleble();
             $table->integer('il_id')->unsigned()->nullable();
             $table->timestamps();
 
