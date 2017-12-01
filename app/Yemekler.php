@@ -16,6 +16,6 @@ class Yemekler extends Model
     ];
 
     public function il() {
-        return $this->belongsTo(Iller::class, 'id', 'il_id');
+        return $this->belongsTo(Iller::class, 'il_id', 'id');
     }
 }

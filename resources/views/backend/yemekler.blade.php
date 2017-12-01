@@ -19,10 +19,10 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                        Mekanlar
+                        Yemekler
                     </h2>
                     <ul class="m-r--5 pull-right">
-                        <a href="/admin/mekanlar/ekle" role="button" class="btn btn-success btn-circle waves-effect waves-circle waves-float">
+                        <a href="/admin/yemekler/ekle" role="button" class="btn btn-success btn-circle waves-effect waves-circle waves-float">
                             <i class="material-icons">queue</i>
                         </a>
                     </ul>
@@ -33,7 +33,7 @@
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Mekan Adı</th>
+                                <th>Yemek Adı</th>
                                 <th>İl</th>
                                 <th>Oluşturma Tarihi</th>
                                 <th>Düzenleme Tarihi</th>
@@ -43,7 +43,7 @@
                             <tfoot>
                             <tr>
                                 <th>#</th>
-                                <th>Mekan Adı</th>
+                                <th>Yemek Adı</th>
                                 <th>İl</th>
                                 <th>Oluşturma Tarihi</th>
                                 <th>Düzenleme Tarihi</th>
@@ -51,18 +51,18 @@
                             </tr>
                             </tfoot>
                             <tbody>
-                            @foreach($mekanlar as $mekan)
+                            @foreach($yemekler as $yemek)
                                 <tr>
-                                    <td>{{ $mekan->id }}</td>
-                                    <td>{{ $mekan->ad }}</td>
-                                    <td>{{ (isset($mekan->il->ad) ? $mekan->il->ad : 'İl Yok') }}</td>
-                                    <td>{{ $mekan->created_at }}</td>
-                                    <td>{{ $mekan->updated_at }}</td>
+                                    <td>{{ $yemek->id }}</td>
+                                    <td>{{ $yemek->ad }}</td>
+                                    <td>{{ (isset($yemek->il->ad) ? $yemek->il->ad : 'İl Yok') }}</td>
+                                    <td>{{ $yemek->created_at }}</td>
+                                    <td>{{ $yemek->updated_at }}</td>
                                     <td align="center">
-                                        <a href="/admin/mekanlar/guncelle/{{ $mekan->id }}" role="button" class="btn btn-warning btn-circle waves-effect waves-circle waves-float" title="Düzenle">
+                                        <a href="/admin/yemekler/guncelle/{{ $yemek->id }}" role="button" class="btn btn-warning btn-circle waves-effect waves-circle waves-float" title="Düzenle">
                                             <i class="material-icons">mode_edit</i>
                                         </a>&nbsp;&nbsp; / &nbsp;
-                                        <a href="/admin/mekanlar/sil/{{ $mekan->id }}" role="button" class="btn btn-danger btn-circle waves-effect waves-circle waves-float" title="Sil">
+                                        <a href="/admin/yemekler/sil/{{ $yemek->id }}" role="button" class="btn btn-danger btn-circle waves-effect waves-circle waves-float" title="Sil">
                                             <i class="material-icons">delete</i>
                                         </a>
                                     </td>
