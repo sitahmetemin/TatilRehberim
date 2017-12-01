@@ -55,4 +55,16 @@ class AdminOtellerController extends Controller
         return redirect('/admin/oteller')->with('hata', $statu);
     }
 
+    public function delete($id) {
+        $delete = Oteller::find($id)->delete();
+
+        if ($delete) {
+            $statu = 'Başarılı';
+            return redirect('/admin/oteller')->with('basari', $statu);
+        }
+
+        $statu = 'İşlem Başarısız!!';
+        return redirect('/admin/oteller')->with('hata', $statu);
+    }
+
 }

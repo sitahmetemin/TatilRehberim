@@ -17,6 +17,14 @@ class Iller extends Model
     ];
 
     public function ilce() {
-        return $this->hasMany(Ilceler::class, 'il_id','id');
+        return $this->hasMany(Ilceler::class, 'id','il_id');
+    }
+
+    public function mekan() {
+        return $this->hasMany(Mekanlar::class, 'id','il_id');
+    }
+
+    public function yemek() {
+        return $this->hasMany(Yemekler::class, 'id','il_id');
     }
 }
