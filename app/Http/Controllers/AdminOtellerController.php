@@ -35,4 +35,24 @@ class AdminOtellerController extends Controller
         return redirect('/admin/oteller')->with('hata', $statu);
     }
 
+    public function updateView ($id) {
+        return view('backend.guncelle.guncelle-otel', [
+            'otel' => Oteller::find($id),
+            'iller' => Iller::all()
+        ]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $ekle = Oteller::find($id)->update($request->except('_token'));
+
+        if ($ekle) {
+            $statu = 'Başarılı';
+            return redirect('/admin/oteller')->with('basari', $statu);
+        }
+
+        $statu = 'İşlem Başarısız!!';
+        return redirect('/admin/oteller')->with('hata', $statu);
+    }
+
 }

@@ -20,14 +20,14 @@ class CreateOtellerTable extends Migration
             $table->integer('yildiz');
             $table->string('resim_yol');
             $table->integer('il_id')->unsigned()->nullable();
-            $table->boolean('denize_sifir');
-            $table->boolean('su_kaynagi');
-            $table->boolean('cocuk_su_kaydiragi');
-            $table->boolean('gece_kulubu');
-            $table->boolean('wifi');
-            $table->boolean('otopark');
-            $table->boolean('restorant');
-            $table->boolean('toplanti_salonu');
+            $table->boolean('denize_sifir')->nullable();
+            $table->boolean('su_kaynagi')->nullable();
+            $table->boolean('cocuk_su_kaydiragi')->nullable();
+            $table->boolean('gece_kulubu')->nullable();
+            $table->boolean('wifi')->nullable();
+            $table->boolean('otopark')->nullable();
+            $table->boolean('restorant')->nullable();
+            $table->boolean('toplanti_salonu')->nullable();
             $table->timestamps();
 
             $table->foreign('il_id')
