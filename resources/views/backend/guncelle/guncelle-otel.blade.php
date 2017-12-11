@@ -35,11 +35,19 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-3">
                                                             <div class="form-group form-float">
                                                                 <div class="form-line">
                                                                     <input type="number" class="form-control" id="slug" name="fiyat" value="{{ $otel->fiyat }}">
                                                                     <label class="form-label">Fiyat</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group form-float">
+                                                                <div class="form-line">
+                                                                    <input type="number" class="form-control" id="uzaklik" value="{{ $otel->uzaklik }}" name="uzaklik">
+                                                                    <label class="form-label">Merkaze uzaklık</label>
                                                                 </div>
                                                             </div>
                                                         </div>

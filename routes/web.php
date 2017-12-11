@@ -12,10 +12,12 @@
 */
 //----------------------------------------------------------------Theme
 Route::get('/', 'ThemeHomeController@view');
-Route::get('/oteller', 'ThemeOtellerController@view');
-Route::get('/tatil-yeri', 'ThemeMekanController@view');
+Route::get('/tatil-bul', 'ThemeTatilBulController@view');
+Route::post('/otel-ara', 'ThemeOtellerController@view');
+Route::post('/mekan-ara', 'ThemeMekanController@view');
 
 
+//Route::post('/', 'ThemeHomeController@result');
 
 //----------------------------------------------------------------Admin
 //------------------------------------------------admin view list

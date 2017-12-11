@@ -78,7 +78,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/">
+                            <a href="/tatil-bul">
                                 <div>Tatil Bul</div>
                             </a>
                         </li>

@@ -10,4 +10,5 @@ class ThemeHomeController extends Controller
     public function view() {
         return view('theme.home');
     }
+
 }
