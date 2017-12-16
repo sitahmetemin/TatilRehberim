@@ -44,7 +44,7 @@
                                 <div id="1" class="panel-collapse collapse in">
                                     <div class="panel-body center">
                                         <div class="row">
-                                            <img src="/assets/theme/images/magazine/carousel/1.jpg" alt="">
+                                            <img src="/uploads/images/secimResimleri/1-camur-yesil.jpg" alt="">
                                             <br><br>
                                             <input class="bt-switch" type="checkbox" data-off-color="danger">
                                         </div>
@@ -61,7 +61,7 @@
                                 <div id="2" class="panel-collapse collapse ">
                                     <div class="panel-body center">
                                         <div class="row">
-                                            <img src="/assets/theme/images/magazine/carousel/1.jpg" alt="">
+                                            <img src="/uploads/images/secimResimleri/2-butik-otel.jpg" alt="">
                                             <br><br>
                                             <input class="bt-switch" type="checkbox" data-off-color="danger">
                                         </div>
@@ -77,7 +77,7 @@
                                 <div id="3" class="panel-collapse collapse ">
                                     <div class="panel-body center">
                                         <div class="row">
-                                            <img src="/assets/theme/images/magazine/carousel/1.jpg" alt="">
+                                            <img src="/uploads/images/secimResimleri/3-kumsal-mavi.jpg" alt="">
                                             <br><br>
                                             <input class="bt-switch" type="checkbox" data-off-color="danger">
                                         </div>
@@ -93,7 +93,7 @@
                                 <div id="4" class="panel-collapse collapse ">
                                     <div class="panel-body center">
                                         <div class="row">
-                                            <img src="/assets/theme/images/magazine/carousel/1.jpg" alt="">
+                                            <img src="/uploads/images/secimResimleri/5-doga-sari.jpg" alt="">
                                             <br><br>
                                             <input class="bt-switch" type="checkbox" data-off-color="danger">
                                         </div>
@@ -109,7 +109,7 @@
                                 <div id="5" class="panel-collapse collapse ">
                                     <div class="panel-body center">
                                         <div class="row">
-                                            <img src="/assets/theme/images/magazine/carousel/1.jpg" alt="">
+                                            <img src="/uploads/images/secimResimleri/6-turistik-sari.jpg" alt="">
                                             <br><br>
                                             <input class="bt-switch" type="checkbox" data-off-color="danger">
                                         </div>
@@ -126,7 +126,7 @@
                                 <div id="6" class="panel-collapse collapse ">
                                     <div class="panel-body center">
                                         <div class="row">
-                                            <img src="/assets/theme/images/magazine/carousel/1.jpg" alt="">
+                                            <img src="/uploads/images/secimResimleri/7-kumsal-mavi.jpg" alt="">
                                             <br><br>
                                             <input class="bt-switch" type="checkbox" data-off-color="danger">
                                         </div>
@@ -143,7 +143,7 @@
                                 <div id="7" class="panel-collapse collapse ">
                                     <div class="panel-body center">
                                         <div class="row">
-                                            <img src="/assets/theme/images/magazine/carousel/1.jpg" alt="">
+                                            <img src="/uploads/images/secimResimleri/8-kar-tatil-beyaz.jpg" alt="">
                                             <br><br>
                                             <input class="bt-switch" type="checkbox" data-off-color="danger">
                                         </div>
@@ -160,7 +160,7 @@
                                 <div id="8" class="panel-collapse collapse ">
                                     <div class="panel-body center">
                                         <div class="row">
-                                            <img src="/assets/theme/images/magazine/carousel/1.jpg" alt="">
+                                            <img src="/uploads/images/secimResimleri/8-doga-yesil-mavi.jpg" alt="">
                                             <br><br>
                                             <input class="bt-switch" type="checkbox" data-off-color="danger">
                                         </div>
@@ -177,7 +177,7 @@
                                 <div id="9" class="panel-collapse collapse ">
                                     <div class="panel-body center">
                                         <div class="row">
-                                            <img src="/assets/theme/images/magazine/carousel/1.jpg" alt="">
+                                            <img src="/uploads/images/secimResimleri/9-kumsal-mavi.jpg" alt="">
                                             <br><br>
                                             <input class="bt-switch" type="checkbox" data-off-color="danger">
                                         </div>
@@ -194,7 +194,7 @@
                                 <div id="10" class="panel-collapse collapse ">
                                     <div class="panel-body center">
                                         <div class="row">
-                                            <img src="/assets/theme/images/magazine/carousel/1.jpg" alt="">
+                                            <img src="/uploads/images/secimResimleri/10-luksotel.jpg" alt="">
                                             <br><br>
                                             <input class="bt-switch" type="checkbox" data-off-color="danger">
                                         </div>
@@ -202,6 +202,66 @@
                                 </div>
                             </div>
 
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#sorular">
+                                        Sorular
+                                    </a>
+                                </div>
+                                <div id="sorular" class="panel-collapse collapse in">
+                                    <div class="panel-body center">
+                                        <div class="col-md-12">
+                                            <label for="" class="form-label">1. Tatile gidiş amacınız nedir?</label>
+                                            <select name="il_id" class="select-1 form-control" style="margin: auto; width: 20%;">
+                                                <optgroup label="iller">
+                                                    <option value="">Gezmek</option>
+                                                    <option value="">Sağlık</option>
+                                                    <option value="">Eğlenmek</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="" class="form-label">2. Konfor mu yoksa amaç mı sizin için önemlidir? </label>
+                                            <select name="il_id" class="select-1 form-control" style="margin: auto; width: 20%;">
+                                                <optgroup label="iller">
+                                                    <option value="">Gezmek</option>
+                                                    <option value="">Sağlık</option>
+                                                    <option value="">Eğlenmek</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="" class="form-label">4. Hangi renkten hoşlanırsınız</label>
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <div style="background-color: yellow; width: 100px; height: 100px;">Sarı</div>
+                                                    <input id="switch-toggle-1" class="switch-toggle switch-rounded-mini switch-toggle-round" type="checkbox">
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <div style="background-color: grey; width: 100px; height: 100px;">Sarı</div>
+                                                    <input class="bt-switch" type="checkbox" data-off-color="danger" data-handle-width="20">
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <div style="background-color: green; width: 100px; height: 100px; ">Sarı</div>
+                                                    <input class="bt-switch" type="checkbox" data-off-color="danger" data-handle-width="20">
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <div style="background-color: black; width: 100px; height: 100px; ">Sarı</div>
+                                                    <input class="bt-switch" type="checkbox" data-off-color="danger" data-handle-width="20">
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <div style="background-color: darkblue; width: 100px; height: 100px;">Sarı</div>
+                                                    <input class="bt-switch" type="checkbox" data-off-color="danger" data-handle-width="20">
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <div style="background-color: #6a1b9a; width: 100px; height: 100px;">Sarı</div>
+                                                    <input class="bt-switch" type="checkbox" data-off-color="danger" data-handle-width="20">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <br>
                         <div class="pull-right">
@@ -226,30 +286,6 @@
 @endsection
 
 @section('js')
-
-    <!-- Jquery Validation Plugin Css -->
-    <script src="/assets/backend/plugins/jquery-validation/jquery.validate.js"></script>
-
-    <!-- JQuery Steps Plugin Js -->
-    <script src="/assets/backend/plugins/jquery-steps/jquery.steps.js"></script>
-
-    <!-- Custom Js -->
-    <script src="/assets/backend/js/pages/forms/form-wizard.js"></script>
-
-    <!-- Custom Js -->
-    <script src="/assets/backend/js/admin.js"></script>
-
-    <!-- Slimscroll Plugin Js -->
-    <script src="/assets/backend/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-
-
-
-
-    <!-- Sweet Alert Plugin Js -->
-    <script src="/assets/backend/plugins/sweetalert/sweetalert.min.js"></script>
-
-
-
 
 
 @endsection
