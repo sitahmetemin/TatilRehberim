@@ -27,10 +27,10 @@
                                             <div class="body">
                                                 <div class="row">
                                                     <div class="row">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-4">
                                                             <div class="form-group form-float">
                                                                 <div class="form-line">
-                                                                    <input type="text" class="form-control" id="ad" name="ad" required>
+                                                                    <input type="text" class="form-control" name="ad" required>
                                                                     <label class="form-label">Otel Adı</label>
                                                                 </div>
                                                             </div>
@@ -38,7 +38,7 @@
                                                         <div class="col-md-3">
                                                             <div class="form-group form-float">
                                                                 <div class="form-line">
-                                                                    <input type="number" class="form-control" id="slug" name="fiyat">
+                                                                    <input type="number" class="form-control" name="fiyat">
                                                                     <label class="form-label">Fiyat</label>
                                                                 </div>
                                                             </div>
@@ -46,8 +46,16 @@
                                                         <div class="col-md-3">
                                                             <div class="form-group form-float">
                                                                 <div class="form-line">
-                                                                    <input type="number" class="form-control" id="uzaklik" name="uzaklik">
-                                                                    <label class="form-label">Merkaze uzaklık</label>
+                                                                    <input type="number" class="form-control" name="uzaklik">
+                                                                    <label class="form-label">Uzaklık</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group form-float">
+                                                                <div class="form-line">
+                                                                    <input type="number" class="form-control" name="puan">
+                                                                    <label class="form-label">Puan</label>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -64,13 +72,14 @@
                                                             <option value="5">5</option>
                                                         </select>
                                                     </div>
+
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group form-float ">
                                                             <div class="form-line">
                                                                 <label>Resim</label>
-                                                                <input type="file" class="form-control" name="resim_yol">
+                                                                <input type="file" class="form-control" name="resimIcerik">
                                                             </div>
                                                         </div>
                                                     </div>

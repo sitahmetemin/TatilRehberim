@@ -35,6 +35,12 @@
                         <span>Anasayfa</span>
                     </a>
                 </li>
+                {{--<li>--}}
+                    {{--<a href="/admin/tatilSecim">--}}
+                        {{--<i class="material-icons">build</i>--}}
+                        {{--<span>Tatil Seçimi İçin Resim</span>--}}
+                    {{--</a>--}}
+                {{--</li>--}}
                 <li>
                     <a href="/admin/oteller">
                         <i class="material-icons">build</i>

@@ -36,8 +36,8 @@
                         @foreach($oteller as $otel)
                             <div class="product  oteller clearfix">
                                 <div class="product-image">
-                                    <a href="#"><img class="center img-responsive" src="/assets/theme/images/shop/pants/1-1.jpg" alt="Slim Fit Chinos"></a>
-                                    <a href="#"><img class="center img-responsive" src="/assets/theme/images/shop/pants/1.jpg" alt="Slim Fit Chinos"></a>
+                                    <a href="#"><img class="center img-responsive" src="{{ $otel->resim_yol }}" alt="Slim Fit Chinos"></a>
+                                    <a href="#"><img class="center img-responsive" src="{{ $otel->resim_yol }}" alt="Slim Fit Chinos"></a>
                                     <div class="product-overlay">
                                         <a href="#" class="add-to-cart"><i class="icon-line2-directions"></i><span> {{ $otel->uzaklik }} km</span></a>
                                         <a href="#" class="item-quick-view" data-lightbox="ajax"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
@@ -87,8 +87,8 @@
                         @foreach($mekanlar as $mekan)
                             <div class="product  mekanlar clearfix">
                                 <div class="product-image">
-                                    <a href="#"><img src="/assets/theme/images/shop/pants/1-1.jpg" alt="Slim Fit Chinos"></a>
-                                    <a href="#"><img src="/assets/theme/images/shop/pants/1.jpg" alt="Slim Fit Chinos"></a>
+                                    <a href="#"><img src="{{ $mekan->resim_yol }}" alt="Slim Fit Chinos"></a>
+                                    <a href="#"><img src="{{ $mekan->resim_yol }}" alt="Slim Fit Chinos"></a>
                                     <div class="product-overlay">
                                         <a href="#" class="item-quick-view" data-lightbox="ajax"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
                                     </div>
@@ -137,8 +137,8 @@
                         @foreach($yemekler as $yemek)
                             <div class="product yemekler clearfix">
                                 <div class="product-image">
-                                    <a href="#"><img src="/assets/theme/images/shop/pants/1-1.jpg" alt="Slim Fit Chinos"></a>
-                                    <a href="#"><img src="/assets/theme/images/shop/pants/1.jpg" alt="Slim Fit Chinos"></a>
+                                    <a href="#"><img src="{{ $yemek->resim_yol }}" alt="Slim Fit Chinos"></a>
+                                    <a href="#"><img src="{{ $yemek->resim_yol }}" alt="Slim Fit Chinos"></a>
                                     <div class="product-overlay">
                                         <a href="#" class="item-quick-view" data-lightbox="ajax"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
                                     </div>
@@ -147,25 +147,25 @@
                                     <div class="product-title"><h3><a href="#">{{ (strlen($yemek->ad) > 15 ? substr($yemek->ad, 0, 15).'...' : $yemek->ad) }}</a></h3></div>
                                     <div class="product-price">{{ substr($yemek->aciklama, 0, 10) }}...</div>
                                     <hr>
-                                    @if($mekan->yildiz == 1)
+                                    @if($yemek->yildiz == 1)
                                         <i class="icon-star3"></i>
                                         <i class="icon-star-empty"></i>
                                         <i class="icon-star-empty"></i>
                                         <i class="icon-star-empty"></i>
                                         <i class="icon-star-empty"></i>
-                                    @elseif($mekan->yildiz == 2)
+                                    @elseif($yemek->yildiz == 2)
                                         <i class="icon-star3"></i>
                                         <i class="icon-star3"></i>
                                         <i class="icon-star-empty"></i>
                                         <i class="icon-star-empty"></i>
                                         <i class="icon-star-empty"></i>
-                                    @elseif($mekan->yildiz == 3)
+                                    @elseif($yemek->yildiz == 3)
                                         <i class="icon-star3"></i>
                                         <i class="icon-star3"></i>
                                         <i class="icon-star3"></i>
                                         <i class="icon-star-empty"></i>
                                         <i class="icon-star-empty"></i>
-                                    @elseif($mekan->yildiz == 4)
+                                    @elseif($yemek->yildiz == 4)
                                         <i class="icon-star3"></i>
                                         <i class="icon-star3"></i>
                                         <i class="icon-star3"></i>

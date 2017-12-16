@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="/assets/theme/css/responsive.css" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+
     <!-- Document Title
     ============================================= -->
     <title>Tatil Rehberim</title>

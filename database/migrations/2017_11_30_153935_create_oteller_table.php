@@ -18,6 +18,7 @@ class CreateOtellerTable extends Migration
             $table->string('ad');
             $table->string('fiyat');
             $table->integer('yildiz');
+            $table->integer('puan');
             $table->string('resim_yol')->nullable();
             $table->integer('uzaklik')->nullable();
             $table->integer('il_id')->unsigned()->nullable();

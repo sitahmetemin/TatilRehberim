@@ -13,6 +13,8 @@ class Oteller extends Model
         'fiyat',
         'yildiz',
         'resim_yol',
+        'puan',
+        'uzaklik',
         'il_id',
         'denize_sifir',
         'su_kaynagi',

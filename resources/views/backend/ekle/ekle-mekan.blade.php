@@ -26,11 +26,19 @@
                                         <div>
                                             <div class="body">
                                                 <div class="row">
-                                                    <div class="col-md-12">
+                                                    <div class="col-md-6">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
                                                                 <input type="text" class="form-control" id="ad" name="ad" required>
                                                                 <label class="form-label">Mekan Adı</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group form-float">
+                                                            <div class="form-line">
+                                                                <input type="number" class="form-control" id="puan" name="puan" >
+                                                                <label class="form-label">Puan</label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -50,7 +58,7 @@
                                                         <div class="form-group form-float ">
                                                             <div class="form-line">
                                                                 <label>Resim</label>
-                                                                <input type="file" class="form-control" name="resim_yol">
+                                                                <input type="file" class="form-control" name="resimIcerik">
                                                             </div>
                                                         </div>
                                                     </div>

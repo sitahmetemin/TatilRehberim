@@ -17,6 +17,7 @@ class CreateYemeklerTable extends Migration
             $table->increments('id');
             $table->string('ad');
             $table->string('resim_yol')->nullable();
+            $table->integer('puan');
             $table->string('aciklama')->nullable();
             $table->integer('il_id')->unsigned();
             $table->timestamps();

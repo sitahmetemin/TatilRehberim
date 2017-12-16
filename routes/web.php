@@ -22,6 +22,9 @@ Route::post('/mekan-ara', 'ThemeMekanController@view');
 //----------------------------------------------------------------Admin
 //------------------------------------------------admin view list
 Route::get('/admin', 'AdminHomeController@view');
+
+Route::get('/admin/tatilSecim', 'AdminTatilSecimController@listView');
+
 Route::get('/admin/oteller', 'AdminOtellerController@listView');
 Route::get('/admin/mekanlar', 'AdminMekanlarController@listView');
 Route::get('/admin/yemekler', 'AdminYemeklerController@listView');

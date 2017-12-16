@@ -12,7 +12,8 @@ class Yemekler extends Model
         'ad',
         'resim_yol',
         'aciklama',
-        'il_id'
+        'il_id',
+        'puan'
     ];
 
     public function il() {

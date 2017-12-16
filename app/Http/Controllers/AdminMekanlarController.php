@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Mekanlar;
 use App\Iller;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class AdminMekanlarController extends Controller
 {
@@ -21,6 +23,20 @@ class AdminMekanlarController extends Controller
     }
 
     public function create (Request $request) {
+
+        $tarih = str_slug(Carbon::now());
+        $slug = str_slug($request->ad) . '-' . $tarih;
+
+        $resim = $request->file('resimIcerik');
+        $resimUzanti = $resim->getClientOriginalExtension();
+
+        if (!empty($resim)) {
+
+            //Resim Yükleme İşlemi
+            Storage::disk('uploads')->put('images/mekanlar/' . $slug . '.' . $resimUzanti, file_get_contents($resim));
+            $request->merge(['resim_yol'=>'/uploads/images/mekanlar/' . $slug . '.' . $resimUzanti]);
+        }
+
         $create = Mekanlar::create($request->all());
 
         if ($create) {
