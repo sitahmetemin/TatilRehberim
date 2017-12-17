@@ -13,8 +13,14 @@
 //----------------------------------------------------------------Theme
 Route::get('/', 'ThemeHomeController@view');
 Route::get('/tatil-bul', 'ThemeTatilBulController@view');
+Route::post('/tatil-bul', 'ThemeTatilBulController@search');
 Route::post('/otel-ara', 'ThemeOtellerController@view');
 Route::post('/mekan-ara', 'ThemeMekanController@view');
+
+
+Route::get('/otel-detay/{id}', 'ThemeDetaylarController@otelDetay');
+Route::get('/mekan-detay/{id}', 'ThemeDetaylarController@mekanDetay');
+Route::get('/yemek-detay/{id}', 'ThemeDetaylarController@yemekDetay');
 
 
 //Route::post('/', 'ThemeHomeController@result');

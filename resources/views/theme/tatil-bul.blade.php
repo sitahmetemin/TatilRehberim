@@ -33,7 +33,8 @@
                             <p>Sizlere en uygun tatili bulmamıza yardım etmek için lütfen aşağıdaki beğendiğiniz resimleri işaretleyin ve soruları cevaplayın </p>
                         </div>
                     </div>
-                    <form action="">
+                    <form action="/tatil-bul" method="post">
+                        {{ csrf_field() }}
                         <div class="panel-group nobottommargin" id="accordion">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -46,7 +47,7 @@
                                         <div class="row">
                                             <img src="/uploads/images/secimResimleri/1-camur-yesil.jpg" alt="">
                                             <br><br>
-                                            <input class="bt-switch" type="checkbox" data-off-color="danger">
+                                            <input class="bt-switch" type="checkbox" name="aile1" data-off-color="danger">
                                         </div>
                                     </div>
                                 </div>
@@ -58,12 +59,12 @@
                                         Resim
                                     </a>
                                 </div>
-                                <div id="2" class="panel-collapse collapse ">
+                                <div id="2" class="panel-collapse collapse in">
                                     <div class="panel-body center">
                                         <div class="row">
                                             <img src="/uploads/images/secimResimleri/2-butik-otel.jpg" alt="">
                                             <br><br>
-                                            <input class="bt-switch" type="checkbox" data-off-color="danger">
+                                            <input class="bt-switch" type="checkbox" name="aile2" data-off-color="danger">
                                         </div>
                                     </div>
                                 </div>
@@ -74,12 +75,12 @@
                                         Resim
                                     </a>
                                 </div>
-                                <div id="3" class="panel-collapse collapse ">
+                                <div id="3" class="panel-collapse collapse in">
                                     <div class="panel-body center">
                                         <div class="row">
                                             <img src="/uploads/images/secimResimleri/3-kumsal-mavi.jpg" alt="">
                                             <br><br>
-                                            <input class="bt-switch" type="checkbox" data-off-color="danger">
+                                            <input class="bt-switch" type="checkbox" name="aile3" data-off-color="danger">
                                         </div>
                                     </div>
                                 </div>
@@ -90,12 +91,12 @@
                                         Resim
                                     </a>
                                 </div>
-                                <div id="4" class="panel-collapse collapse ">
+                                <div id="4" class="panel-collapse collapse in">
                                     <div class="panel-body center">
                                         <div class="row">
                                             <img src="/uploads/images/secimResimleri/5-doga-sari.jpg" alt="">
                                             <br><br>
-                                            <input class="bt-switch" type="checkbox" data-off-color="danger">
+                                            <input class="bt-switch" type="checkbox" name="gezi5" data-off-color="danger">
                                         </div>
                                     </div>
                                 </div>
@@ -106,12 +107,12 @@
                                         Resim
                                     </a>
                                 </div>
-                                <div id="5" class="panel-collapse collapse ">
+                                <div id="5" class="panel-collapse collapse in">
                                     <div class="panel-body center">
                                         <div class="row">
                                             <img src="/uploads/images/secimResimleri/6-turistik-sari.jpg" alt="">
                                             <br><br>
-                                            <input class="bt-switch" type="checkbox" data-off-color="danger">
+                                            <input class="bt-switch" type="checkbox" name="gezi6" data-off-color="danger">
                                         </div>
                                     </div>
                                 </div>
@@ -123,12 +124,12 @@
                                         Resim
                                     </a>
                                 </div>
-                                <div id="6" class="panel-collapse collapse ">
+                                <div id="6" class="panel-collapse collapse in">
                                     <div class="panel-body center">
                                         <div class="row">
                                             <img src="/uploads/images/secimResimleri/7-kumsal-mavi.jpg" alt="">
                                             <br><br>
-                                            <input class="bt-switch" type="checkbox" data-off-color="danger">
+                                            <input class="bt-switch" type="checkbox" name="konfor7" data-off-color="danger">
                                         </div>
                                     </div>
                                 </div>
@@ -140,12 +141,12 @@
                                         Resim
                                     </a>
                                 </div>
-                                <div id="7" class="panel-collapse collapse ">
+                                <div id="7" class="panel-collapse collapse in">
                                     <div class="panel-body center">
                                         <div class="row">
                                             <img src="/uploads/images/secimResimleri/8-kar-tatil-beyaz.jpg" alt="">
                                             <br><br>
-                                            <input class="bt-switch" type="checkbox" data-off-color="danger">
+                                            <input class="bt-switch" type="checkbox" name="konfor8" data-off-color="danger">
                                         </div>
                                     </div>
                                 </div>
@@ -157,12 +158,12 @@
                                         Resim
                                     </a>
                                 </div>
-                                <div id="8" class="panel-collapse collapse ">
+                                <div id="8" class="panel-collapse collapse in">
                                     <div class="panel-body center">
                                         <div class="row">
                                             <img src="/uploads/images/secimResimleri/8-doga-yesil-mavi.jpg" alt="">
                                             <br><br>
-                                            <input class="bt-switch" type="checkbox" data-off-color="danger">
+                                            <input class="bt-switch" type="checkbox" name="konfor81" data-off-color="danger">
                                         </div>
                                     </div>
                                 </div>
@@ -174,12 +175,12 @@
                                         Resim
                                     </a>
                                 </div>
-                                <div id="9" class="panel-collapse collapse ">
+                                <div id="9" class="panel-collapse collapse in">
                                     <div class="panel-body center">
                                         <div class="row">
                                             <img src="/uploads/images/secimResimleri/9-kumsal-mavi.jpg" alt="">
                                             <br><br>
-                                            <input class="bt-switch" type="checkbox" data-off-color="danger">
+                                            <input class="bt-switch" type="checkbox" name="konfor9" data-off-color="danger">
                                         </div>
                                     </div>
                                 </div>
@@ -191,12 +192,12 @@
                                         Resim
                                     </a>
                                 </div>
-                                <div id="10" class="panel-collapse collapse ">
+                                <div id="10" class="panel-collapse collapse in">
                                     <div class="panel-body center">
                                         <div class="row">
                                             <img src="/uploads/images/secimResimleri/10-luksotel.jpg" alt="">
                                             <br><br>
-                                            <input class="bt-switch" type="checkbox" data-off-color="danger">
+                                            <input class="bt-switch" type="checkbox" name="konfor10" data-off-color="danger">
                                         </div>
                                     </div>
                                 </div>
@@ -212,51 +213,68 @@
                                     <div class="panel-body center">
                                         <div class="col-md-12">
                                             <label for="" class="form-label">1. Tatile gidiş amacınız nedir?</label>
-                                            <select name="il_id" class="select-1 form-control" style="margin: auto; width: 20%;">
-                                                <optgroup label="iller">
-                                                    <option value="">Gezmek</option>
-                                                    <option value="">Sağlık</option>
-                                                    <option value="">Eğlenmek</option>
+                                            <select name="amac" class="select-1 form-control" style="margin: auto; width: 20%;">
+                                                <optgroup label="Amaç">
+                                                    <option value="5">Gezmek</option>
+                                                    <option value="10">Eğlenmek</option>
+                                                    <option value="3">Dinlenmek</option>
                                                 </optgroup>
                                             </select>
                                         </div>
                                         <div class="col-md-12">
                                             <label for="" class="form-label">2. Konfor mu yoksa amaç mı sizin için önemlidir? </label>
-                                            <select name="il_id" class="select-1 form-control" style="margin: auto; width: 20%;">
-                                                <optgroup label="iller">
-                                                    <option value="">Gezmek</option>
-                                                    <option value="">Sağlık</option>
-                                                    <option value="">Eğlenmek</option>
+                                            <select name="konfor" class="select-1 form-control" style="margin: auto; width: 20%;">
+                                                <optgroup>
+                                                    <option value="1">Amaç</option>
+                                                    <option value="10">Konfor</option>
                                                 </optgroup>
                                             </select>
                                         </div>
                                         <div class="col-md-12">
                                             <label for="" class="form-label">4. Hangi renkten hoşlanırsınız</label>
                                             <div class="row">
-                                                <div class="col-md-1">
-                                                    <div style="background-color: yellow; width: 100px; height: 100px;">Sarı</div>
-                                                    <input id="switch-toggle-1" class="switch-toggle switch-rounded-mini switch-toggle-round" type="checkbox">
+                                                <div class="col-md-2  ">
+                                                    <label for="">
+                                                        <label for="" style="background-color: yellow; width: 100px; height: 100px" ></label>
+                                                        <input id="yellow" name="sari" class="switch-toggle switch-toggle-round" type="checkbox">
+                                                        <label for="yellow"></label>
+                                                    </label>
                                                 </div>
-                                                <div class="col-md-1">
-                                                    <div style="background-color: grey; width: 100px; height: 100px;">Sarı</div>
-                                                    <input class="bt-switch" type="checkbox" data-off-color="danger" data-handle-width="20">
+                                                <div class="col-md-2  ">
+                                                    <label for="">
+                                                        <label for="" style="background-color: red; width: 100px; height: 100px" ></label>
+                                                        <input id="red" name="kirmizi" class="switch-toggle switch-toggle-round" type="checkbox">
+                                                        <label for="red"></label>
+                                                    </label>
                                                 </div>
-                                                <div class="col-md-1">
-                                                    <div style="background-color: green; width: 100px; height: 100px; ">Sarı</div>
-                                                    <input class="bt-switch" type="checkbox" data-off-color="danger" data-handle-width="20">
+                                                <div class="col-md-2  ">
+                                                    <label for="">
+                                                        <label for="" style="background-color: orange; width: 100px; height: 100px" ></label>
+                                                        <input id="orange" name="turuncu" class="switch-toggle switch-toggle-round" type="checkbox">
+                                                        <label for="orange"></label>
+                                                    </label>
+                                                </div><div class="col-md-2  ">
+                                                    <label for="">
+                                                        <label for="" style="background-color: purple; width: 100px; height: 100px" ></label>
+                                                        <input id="purple" name="mor" class="switch-toggle switch-toggle-round" type="checkbox">
+                                                        <label for="purple"></label>
+                                                    </label>
                                                 </div>
-                                                <div class="col-md-1">
-                                                    <div style="background-color: black; width: 100px; height: 100px; ">Sarı</div>
-                                                    <input class="bt-switch" type="checkbox" data-off-color="danger" data-handle-width="20">
+                                                <div class="col-md-2  ">
+                                                    <label for="">
+                                                        <label for="" style="background-color: dodgerblue; width: 100px; height: 100px" ></label>
+                                                        <input id="dodgerblue" name="mavi" class="switch-toggle switch-toggle-round" type="checkbox">
+                                                        <label for="dodgerblue"></label>
+                                                    </label>
                                                 </div>
-                                                <div class="col-md-1">
-                                                    <div style="background-color: darkblue; width: 100px; height: 100px;">Sarı</div>
-                                                    <input class="bt-switch" type="checkbox" data-off-color="danger" data-handle-width="20">
+                                                <div class="col-md-2  ">
+                                                    <label for="">
+                                                        <label for="" style="background-color: green; width: 100px; height: 100px" ></label>
+                                                        <input id="green" name="yesil" class="switch-toggle switch-toggle-round" type="checkbox">
+                                                        <label for="green"></label>
+                                                    </label>
                                                 </div>
-                                                <div class="col-md-1">
-                                                    <div style="background-color: #6a1b9a; width: 100px; height: 100px;">Sarı</div>
-                                                    <input class="bt-switch" type="checkbox" data-off-color="danger" data-handle-width="20">
-                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -280,8 +298,6 @@
 @endsection
 
 @section('css')
-    <!-- Custom Css -->
-    <link href="/assets/backend/css/style.css" rel="stylesheet">
 
 @endsection
 

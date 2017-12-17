@@ -29,36 +29,38 @@
                 <!-- Post Content
                 ============================================= -->
                 <div class="postcontent nobottommargin col_last">
-
                     <!-- Oteller Listesi
-                    ============================================= -->
-                    <div id="shop" class="shop product-3 grid-container clearfix">
-
-                        <div class="product oteller clearfix">
-                            <div class="product-image">
-                                <a href="#"><img src="/assets/theme/images/shop/dress/1.jpg" alt="Checked Short Dress"></a>
-                                <a href="#"><img src="/assets/theme/images/shop/dress/1-1.jpg" alt="Checked Short Dress"></a>
-                                <div class="sale-flash">50% indirim*</div>
-                                <div class="product-overlay">
-                                    <a href="#" title="Merkeze Uzaklık" class="add-to-cart"><i class="icon-location-arrow"></i><span> 6 km</span></a>
-                                    <a href="#" title="Detaylar" class="item-quick-view"><i class="icon-zoom-in2"></i><span> </span></a>
+                    ============================================ -->
+                        <div id="shop" class="shop product-3 grid-container clearfix">
+                            @foreach($oteller as $otel)
+                            <div class="product oteller clearfix">
+                                <div class="product-image">
+                                    <a href="#"><img src="/assets/theme/images/shop/dress/1.jpg" alt="Checked Short Dress"></a>
+                                    <a href="#"><img src="/assets/theme/images/shop/dress/1-1.jpg" alt="Checked Short Dress"></a>
+                                    <div class="sale-flash">50% indirim*</div>
+                                    <div class="product-overlay">
+                                        <a href="#" title="Merkeze Uzaklık" class="add-to-cart"><i class="icon-location-arrow"></i><span> 6 km</span></a>
+                                        <a href="#" title="Detaylar" class="item-quick-view"><i class="icon-zoom-in2"></i><span> </span></a>
+                                    </div>
+                                </div>
+                                <div class="product-desc center">
+                                    <div class="product-title"><h3><a href="#">OtelAdı</a></h3></div>
+                                    <div class="product-price">
+                                        <ins>₺12.49</ins>
+                                        <ins class="icon-resize-horizontal"></ins>
+                                        <ins>₺24.49</ins>
+                                    </div>
+                                    <div class="product-rating">
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star-half-full"></i>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-desc center">
-                                <div class="product-title"><h3><a href="#">OtelAdı</a></h3></div>
-                                <div class="product-price"><ins>₺12.49</ins> <ins class="icon-resize-horizontal"></ins> <ins>₺24.49</ins></div>
-                                <div class="product-rating">
-                                    <i class="icon-star3"></i>
-                                    <i class="icon-star3"></i>
-                                    <i class="icon-star3"></i>
-                                    <i class="icon-star3"></i>
-                                    <i class="icon-star-half-full"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div><!-- #Oteller Listesi end -->
-
+                            @endforeach
+                        </div><!-- #Oteller Listesi end -->
                 </div><!-- .postcontent end -->
 
                 <!-- Sidebar

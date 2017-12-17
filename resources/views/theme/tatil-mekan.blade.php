@@ -44,7 +44,7 @@
                                     </div>
                                 </div>
                                 <div class="product-desc alert alert-warning center">
-                                    <div class="product-title"><h3><a href="#">{{ (strlen($otel->ad) > 15 ? substr($otel->ad, 0, 15).'...' : $otel->ad) }}</a></h3></div>
+                                    <div class="product-title"><h3><a href="/otel-detay/{{ $otel->id }}">{{ (strlen($otel->ad) > 15 ? substr($otel->ad, 0, 15).'...' : $otel->ad) }}</a></h3></div>
                                     <div class="product-price">{{ $otel->fiyat }}₺</div>
                                     <hr>
                                     <div class="product-rating">
@@ -94,7 +94,7 @@
                                     </div>
                                 </div>
                                 <div class="product-desc alert alert-success center">
-                                    <div class="product-title"><h3><a href="#">{{ (strlen($mekan->ad) > 15 ? substr($mekan->ad, 0, 15).'...' : $mekan->ad) }}</a></h3></div>
+                                    <div class="product-title"><h3><a href="/mekan-detay/{{ $mekan->id }}">{{ (strlen($mekan->ad) > 15 ? substr($mekan->ad, 0, 15).'...' : $mekan->ad) }}</a></h3></div>
                                     <div class="product-price">{{ substr($mekan->icerik, 0, 10) }}...</div>
                                     <hr>
                                     <div class="product-rating">
@@ -144,7 +144,7 @@
                                     </div>
                                 </div>
                                 <div class="product-desc alert alert-info center">
-                                    <div class="product-title"><h3><a href="#">{{ (strlen($yemek->ad) > 15 ? substr($yemek->ad, 0, 15).'...' : $yemek->ad) }}</a></h3></div>
+                                    <div class="product-title"><h3><a href="/yemek-detay/{{ $yemek->id }}">{{ (strlen($yemek->ad) > 15 ? substr($yemek->ad, 0, 15).'...' : $yemek->ad) }}</a></h3></div>
                                     <div class="product-price">{{ substr($yemek->aciklama, 0, 10) }}...</div>
                                     <hr>
                                     @if($yemek->yildiz == 1)

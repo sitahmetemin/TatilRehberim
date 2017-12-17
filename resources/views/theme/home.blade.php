@@ -101,110 +101,27 @@
         ===============================================--}}
         <div id="oc-images" class="row owl-carousel owl-carousel-full news-carousel header-stick bottommargin-lg carousel-widget" data-margin="3" data-loop="true" data-stage-padding="50" data-pagi="false"
              data-items-xs="1" data-items-lg="2">
-
-
-            <div class="oc-item">
-                <a href="#"><img src="/assets/theme/images/magazine/carousel/1.jpg" alt="Image 1"></a>
-                <div class="overlay">
-                    <div class="text-overlay">
-                        <span class="label label-danger">World</span>
-                        <div class="text-overlay-title">
-                            <h2>CJI defends collegium system, says don't defame judiciary</h2>
+            @php(\Carbon\Carbon::setLocale('tr'))
+            @foreach($oteller as $otel)
+                <div class="oc-item">
+                    <a href="#"><img src="{{ $otel->resim_yol }}" alt="Image 1"></a>
+                    <div class="overlay">
+                        <div class="text-overlay">
+                            <span class="label label-danger">{{ $otel->il->ad }}</span>
+                            <div class="text-overlay-title">
+                                <h2>{{ $otel->ad }}</h2>
+                            </div>
+                            <div class="text-overlay-meta">
+                                <span>{{ $otel->created_at->diffForHumans() }}</span>
+                            </div>
+                            <a href="/otel-detay/{{ $otel->id }}" class="button button-reveal button-border button-light button-small button-rounded uppercase tright noleftmargin topmargin-sm"><span>Detaylar</span><i
+                                        class="icon-angle-right"></i></a>
                         </div>
-                        <div class="text-overlay-meta">
-                            <span>14th Sep 2014</span>
-                        </div>
-                        <a href="#" class="button button-reveal button-border button-light button-small button-rounded uppercase tright noleftmargin topmargin-sm"><span>Read Story</span><i
-                                    class="icon-angle-right"></i></a>
+                        <div class="rounded-skill" data-color="#e74c3c" data-trackcolor="rgba(0,0,0,0.1)" data-size="80" data-percent="{{ $otel->yildiz }}00" data-width="{{ $otel->yildiz }}"
+                             data-animate="3000">{{ $otel->yildiz }}</div>
                     </div>
-                    <div class="rounded-skill" data-color="#e74c3c" data-trackcolor="rgba(0,0,0,0.1)" data-size="80" data-percent="75" data-width="7" data-animate="3000">7.5</div>
                 </div>
-            </div>
-            <div class="oc-item">
-                <a href="#"><img src="/assets/theme/images/magazine/carousel/4.jpg" alt="Image 2"></a>
-                <div class="overlay">
-                    <div class="text-overlay">
-                        <span class="label label-danger">World</span>
-                        <div class="text-overlay-title">
-                            <h2>Nutrition pursue these aspirations network respect focus.</h2>
-                        </div>
-                        <div class="text-overlay-meta">
-                            <span>21st Aug 2014</span>
-                        </div>
-                        <a href="#" class="button button-reveal button-border button-light button-small button-rounded uppercase tright noleftmargin topmargin-sm"><span>Read Story</span><i
-                                    class="icon-angle-right"></i></a>
-                    </div>
-                    <div class="rounded-skill" data-color="#e74c3c" data-trackcolor="rgba(0,0,0,0.1)" data-size="80" data-percent="50" data-width="7" data-animate="3000">5.0</div>
-                </div>
-            </div>
-            <div class="oc-item">
-                <a href="#"><img src="/assets/theme/images/magazine/carousel/6.jpg" alt="Image 3"></a>
-                <div class="overlay">
-                    <div class="text-overlay">
-                        <span class="label label-danger">World</span>
-                        <div class="text-overlay-title">
-                            <h2>Political, vulnerable citizens eradicate philanthropy.</h2>
-                        </div>
-                        <div class="text-overlay-meta">
-                            <span>8th Nov 2014</span>
-                        </div>
-                        <a href="#" class="button button-reveal button-border button-light button-small button-rounded uppercase tright noleftmargin topmargin-sm"><span>Read Story</span><i
-                                    class="icon-angle-right"></i></a>
-                    </div>
-                    <div class="rounded-skill" data-color="#e74c3c" data-trackcolor="rgba(0,0,0,0.1)" data-size="80" data-percent="60" data-width="7" data-animate="3000">6.0</div>
-                </div>
-            </div>
-            <div class="oc-item">
-                <a href="#"><img src="/assets/theme/images/magazine/carousel/11.jpg" alt="Image 4"></a>
-                <div class="overlay">
-                    <div class="text-overlay">
-                        <span class="label label-danger">World</span>
-                        <div class="text-overlay-title">
-                            <h2>Revitalize Bloomberg accelerate human potential.</h2>
-                        </div>
-                        <div class="text-overlay-meta">
-                            <span>30th Jan 2014</span>
-                        </div>
-                        <a href="#" class="button button-reveal button-border button-light button-small button-rounded uppercase tright noleftmargin topmargin-sm"><span>Read Story</span><i
-                                    class="icon-angle-right"></i></a>
-                    </div>
-                    <div class="rounded-skill" data-color="#e74c3c" data-trackcolor="rgba(0,0,0,0.1)" data-size="80" data-percent="80" data-width="7" data-animate="3000">8.0</div>
-                </div>
-            </div>
-            <div class="oc-item">
-                <a href="#"><img src="/assets/theme/images/magazine/carousel/13.jpg" alt="Image 5"></a>
-                <div class="overlay">
-                    <div class="text-overlay">
-                        <span class="label label-danger">World</span>
-                        <div class="text-overlay-title">
-                            <h2>Momentum tackling cross-agency coordination volunteer revitalize.</h2>
-                        </div>
-                        <div class="text-overlay-meta">
-                            <span>11th Feb 2014</span>
-                        </div>
-                        <a href="#" class="button button-reveal button-border button-light button-small button-rounded uppercase tright noleftmargin topmargin-sm"><span>Read Story</span><i
-                                    class="icon-angle-right"></i></a>
-                    </div>
-                    <div class="rounded-skill" data-color="#e74c3c" data-trackcolor="rgba(0,0,0,0.1)" data-size="80" data-percent="40" data-width="7" data-animate="3000">4.0</div>
-                </div>
-            </div>
-            <div class="oc-item">
-                <a href="#"><img src="/assets/theme/images/magazine/carousel/14.jpg" alt="Image 6"></a>
-                <div class="overlay">
-                    <div class="text-overlay">
-                        <span class="label label-danger">World</span>
-                        <div class="text-overlay-title">
-                            <h2>Social responsibility Aga Khan health institutions.</h2>
-                        </div>
-                        <div class="text-overlay-meta">
-                            <span>27th Mar 2014</span>
-                        </div>
-                        <a href="#" class="button button-reveal button-border button-light button-small button-rounded uppercase tright noleftmargin topmargin-sm"><span>Read Story</span><i
-                                    class="icon-angle-right"></i></a>
-                    </div>
-                    <div class="rounded-skill" data-color="#e74c3c" data-trackcolor="rgba(0,0,0,0.1)" data-size="80" data-percent="62" data-width="7" data-animate="3000">6.2</div>
-                </div>
-            </div>
+            @endforeach
 
         </div>
         <div class="">

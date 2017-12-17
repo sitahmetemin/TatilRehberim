@@ -16,7 +16,7 @@ class CreateOtellerTable extends Migration
         Schema::create('oteller', function (Blueprint $table) {
             $table->increments('id');
             $table->string('ad');
-            $table->string('fiyat');
+            $table->integer('fiyat');
             $table->integer('yildiz');
             $table->integer('puan');
             $table->string('resim_yol')->nullable();
