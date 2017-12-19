@@ -25,8 +25,12 @@
                         <!-- Entry content
                         ============================================= -->
                         <div class="entry-content notopmargin">
-                            <p>{{ isset($veriler->aciklama) ? $veriler->aciklama : ' ' }}</p>
-                            @if(isset($veriler->yildiz))
+                            @if(isset($veriler->aciklama))
+                                {{--yemekler--}}
+                            <p>{{  $veriler->aciklama }}</p>
+                            <div><label for="" class="label label-primary"> {{ $veriler->il->ad }}</label></div>
+                            @elseif(isset($veriler->yildiz))
+                                {{--otel Bilgileri--}}
                                 <div class="thumbnail">
                                     Özellikler:
                                     <ul style="padding-left: 30px">
@@ -39,9 +43,12 @@
                                         <li>restorant: {{ $veriler->restorant  == 1 ? 'Var' : 'Yok' }}</li>
                                         <li>toplanti_salonu :{{ $veriler->toplanti_salonu  == 1 ? 'Var' : 'Yok' }}</li>
                                     </ul>
+                                    <div><label for="" class="label label-primary"> {{ $veriler->il->ad }}</label></div>
                                 </div>
                             @elseif(isset($veriler->icerik))
-
+                                {{--mekanlar--}}
+                                <p>{{ $veriler->icerik }}</p>
+                                <div><label for="" class="label label-primary"> {{ $veriler->il->ad }}</label></div>
                             @endif
                         </div>
                         <!-- Post Single - Content End -->

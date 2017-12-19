@@ -10,7 +10,7 @@ class ThemeHomeController extends Controller
 {
     public function view() {
         return view('theme.home', [
-            'oteller' => Oteller::where('yildiz', 5)->take(4)->get()
+            'oteller' => Oteller::inRandomOrder()->take(6)->get()
         ]);
     }
 

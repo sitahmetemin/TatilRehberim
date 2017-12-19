@@ -18,64 +18,188 @@
 
     </section><!-- #page-title end -->
 
-    @if(strpos(url()->full(), 'tatil-bul'))
+
     <!-- Content
 		============================================= -->
     <section id="content">
+
         <div class="content-wrap">
+
             <div class="container clearfix">
+
                 <!-- Post Content
                 ============================================= -->
                 <div class="postcontent nobottommargin col_last">
-                    <!-- Oteller Listesi
+
+                    <!-- Shop
                     ============================================= -->
                     <div id="shop" class="shop product-3 grid-container clearfix">
-
-                        <div class="product oteller clearfix">
-                            <div class="product-image">
-                                <a href="#"><img src="/assets/theme/images/shop/dress/1.jpg" alt="Checked Short Dress"></a>
-                                <a href="#"><img src="/assets/theme/images/shop/dress/1-1.jpg" alt="Checked Short Dress"></a>
-                                <div class="sale-flash">50% indirim*</div>
-                                <div class="product-overlay">
-                                    <a href="#" title="Merkeze Uzaklık" class="add-to-cart"><i class="icon-location-arrow"></i><span> 6 km</span></a>
-                                    <a href="#" title="Detaylar" class="item-quick-view"><i class="icon-zoom-in2"></i><span> </span></a>
+                        @foreach($oteller as $otel)
+                            <div class="product  oteller clearfix">
+                                <div class="product-image">
+                                    <a href="#"><img class="center img-responsive" src="{{ $otel->resim_yol }}" alt="Slim Fit Chinos"></a>
+                                    <a href="#"><img class="center img-responsive" src="{{ $otel->resim_yol }}" alt="Slim Fit Chinos"></a>
+                                    <div class="product-overlay">
+                                        <a href="#" class="add-to-cart"><i class="icon-line2-directions"></i><span> {{ $otel->uzaklik }} km</span></a>
+                                        <a href="#" class="item-quick-view" ><i class="icon-flag"></i><span> {{ $otel->il->ad }}</span></a>
+                                    </div>
+                                </div>
+                                <div class="product-desc alert alert-warning center">
+                                    <div class="product-title"><h3><a href="/otel-detay/{{ $otel->id }}">{{ (strlen($otel->ad) > 15 ? substr($otel->ad, 0, 15).'...' : $otel->ad) }}</a></h3></div>
+                                    <div class="product-price">{{ $otel->fiyat }}₺</div>
+                                    <hr>
+                                    <div class="product-rating">
+                                        @if($otel->yildiz == 1)
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star-empty"></i>
+                                            <i class="icon-star-empty"></i>
+                                            <i class="icon-star-empty"></i>
+                                            <i class="icon-star-empty"></i>
+                                        @elseif($otel->yildiz == 2)
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star-empty"></i>
+                                            <i class="icon-star-empty"></i>
+                                            <i class="icon-star-empty"></i>
+                                        @elseif($otel->yildiz == 3)
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star-empty"></i>
+                                            <i class="icon-star-empty"></i>
+                                        @elseif($otel->yildiz == 4)
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star-empty"></i>
+                                        @else
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                        @endif
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-desc center">
-                                <div class="product-title"><h3><a href="#">OtelAdı</a></h3></div>
-                                <div class="product-price"><ins>₺12.49</ins> <ins class="icon-resize-horizontal"></ins> <ins>₺24.49</ins></div>
-                                <div class="product-rating">
-                                    <i class="icon-star3"></i>
-                                    <i class="icon-star3"></i>
-                                    <i class="icon-star3"></i>
-                                    <i class="icon-star3"></i>
-                                    <i class="icon-star-half-full"></i>
+                        @endforeach
+
+                        @foreach($mekanlar as $mekan)
+                            <div class="product  mekanlar clearfix">
+                                <div class="product-image">
+                                    <a href="#"><img src="{{ $mekan->resim_yol }}" alt="Slim Fit Chinos"></a>
+                                    <a href="#"><img src="{{ $mekan->resim_yol }}" alt="Slim Fit Chinos"></a>
+                                    <div class="product-overlay">
+                                        <a href="#" class="item-quick-view" ><i class="icon-flag"></i><span>{{ $mekan->il->ad }}</span></a>
+                                    </div>
+                                </div>
+                                <div class="product-desc alert alert-success center">
+                                    <div class="product-title"><h3><a href="/mekan-detay/{{ $mekan->id }}">{!! (strlen($mekan->ad) > 15 ? substr($mekan->ad, 0, 15).'...' : $mekan->ad) !!}</a></h3></div>
+                                    <div class="product-price">{{ substr($mekan->icerik, 0, 10) }}...</div>
+                                    <hr>
+                                    <div class="product-rating">
+                                        @if($mekan->yildiz == 1)
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star-empty"></i>
+                                            <i class="icon-star-empty"></i>
+                                            <i class="icon-star-empty"></i>
+                                            <i class="icon-star-empty"></i>
+                                        @elseif($mekan->yildiz == 2)
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star-empty"></i>
+                                            <i class="icon-star-empty"></i>
+                                            <i class="icon-star-empty"></i>
+                                        @elseif($mekan->yildiz == 3)
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star-empty"></i>
+                                            <i class="icon-star-empty"></i>
+                                        @elseif($mekan->yildiz == 4)
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star-empty"></i>
+                                        @else
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                            <i class="icon-star3"></i>
+                                        @endif
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        @endforeach
 
-                    </div><!-- #Oteller Listesi end -->
-
+                        @foreach($yemekler as $yemek)
+                            <div class="product yemekler clearfix">
+                                <div class="product-image">
+                                    <a href="#"><img src="{{ $yemek->resim_yol }}" alt="Slim Fit Chinos"></a>
+                                    <a href="#"><img src="{{ $yemek->resim_yol }}" alt="Slim Fit Chinos"></a>
+                                    <div class="product-overlay">
+                                        <a href="#" class="item-quick-view" data-lightbox="ajax"><i class="icon-flag"></i><span> {{ $yemek->il->ad }}</span></a>
+                                    </div>
+                                </div>
+                                <div class="product-desc alert alert-info center">
+                                    <div class="product-title"><h3><a href="/yemek-detay/{{ $yemek->id }}">{{ (strlen($yemek->ad) > 15 ? substr($yemek->ad, 0, 15).'...' : $yemek->ad) }}</a></h3></div>
+                                    <div class="product-price">{{ substr($yemek->aciklama, 0, 10) }}...</div>
+                                    <hr>
+                                    @if($yemek->yildiz == 1)
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star-empty"></i>
+                                        <i class="icon-star-empty"></i>
+                                        <i class="icon-star-empty"></i>
+                                        <i class="icon-star-empty"></i>
+                                    @elseif($yemek->yildiz == 2)
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star-empty"></i>
+                                        <i class="icon-star-empty"></i>
+                                        <i class="icon-star-empty"></i>
+                                    @elseif($yemek->yildiz == 3)
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star-empty"></i>
+                                        <i class="icon-star-empty"></i>
+                                    @elseif($yemek->yildiz == 4)
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star-empty"></i>
+                                    @else
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                    @endif
+                                </div>
+                            </div>
+                        @endforeach
+                    </div><!-- #shop end -->
                 </div><!-- .postcontent end -->
 
                 <!-- Sidebar
                 ============================================= -->
                 <div class="sidebar nobottommargin">
                     <div class="sidebar-widgets-wrap">
-
                         <div class="widget widget-filter-links clearfix">
-
-                            <h4>Kategori</h4>
+                            <h4>Kategori Seçiniz</h4>
                             <ul class="custom-filter" data-container="#shop" data-active-class="active-filter">
                                 <li class="widget-filter-reset active-filter"><a href="#" data-filter="*">Temizle</a></li>
+                                <li><a href="#" data-filter=".mekanlar">Mekanlar</a></li>
+                                <li><a href="#" data-filter=".yemekler">Yemekler</a></li>
                                 <li><a href="#" data-filter=".oteller">Oteller</a></li>
                             </ul>
-
                         </div>
-
                         <div class="widget widget-filter-links clearfix">
-
-                            <h4>Sırala</h4>
+                            <h4>Sort By</h4>
                             <ul class="shop-sorting">
                                 <li class="widget-filter-reset active-filter"><a href="#" data-sort-by="original-order">Temizle</a></li>
                                 <li><a href="#" data-sort-by="name">Ada Göre</a></li>
@@ -83,16 +207,23 @@
                                 <li><a href="#" data-sort-by="price_hl">Fiyat: Çoktan Aza</a></li>
                             </ul>
                         </div>
-
+                        <div class="row thumbnail">
+                            <label class="label label-default">Renk Açıklamaları</label>
+                            <div class="col-md-12">
+                                <div class="alert alert-info">Yemek</div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="alert alert-success">Mekan</div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="alert alert-warning">Otel</div>
+                            </div>
+                        </div>
                     </div>
                 </div><!-- .sidebar end -->
-
             </div>
-
         </div>
-
     </section><!-- #content end -->
-    @endif
 @endsection
 
 @section('css')
@@ -100,12 +231,5 @@
 @endsection
 
 @section('js')
-    @if(strpos(url()->full(), 'tatil-bul'))
-    <script>
-        $('document').ready(function () {
-            $('#content').slideDown();
-        });
-    </script>
-    @endif
 
 @endsection

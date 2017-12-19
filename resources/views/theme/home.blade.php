@@ -128,8 +128,7 @@
             <div class="container clearfix">
                 <div class="row topmargin-lg bottommargin-sm">
                     <div class="heading-block center">
-                        <h2>Rehber Bölülümü Hakkında Bilgilendirici İçerik</h2>
-                        <span class="divcenter">Philanthropy convener livelihoods, initiative end hunger gender rights local. John Lennon storytelling; advocate, altruism impact catalyst.</span>
+                        <h2>Sistem Nasıl Çalışır?</h2>
                     </div>
 
                     <div class="col-md-4 col-sm-6 bottommargin">
@@ -138,24 +137,14 @@
                             <div class="fbox-icon">
                                 <a href="#"><i class="icon-line-heart"></i></a>
                             </div>
-                            <h3>Boxed &amp; Wide Layouts</h3>
-                            <p>Stretch your Website to the Full Width or make it boxed to surprise your visitors.</p>
+                            <h3>Sizlerin beğeni ve seçimlerinizden yola çıkmaktadır</h3>
                         </div>
 
                         <div class="feature-box fbox-right topmargin" data-animate="fadeIn" data-delay="200">
                             <div class="fbox-icon">
                                 <a href="#"><i class="icon-line-paper"></i></a>
                             </div>
-                            <h3>Extensive Documentation</h3>
-                            <p>We have covered each &amp; everything in our Docs including Videos &amp; Screenshots.</p>
-                        </div>
-
-                        <div class="feature-box fbox-right topmargin" data-animate="fadeIn" data-delay="400">
-                            <div class="fbox-icon">
-                                <a href="#"><i class="icon-line-layers"></i></a>
-                            </div>
-                            <h3>Parallax Support</h3>
-                            <p>Display your Content attractively using Parallax Sections with HTML5 Videos.</p>
+                            <h3>Yüksek Hesaplama Matematiği Kullanılmıştır</h3>
                         </div>
 
                     </div>
@@ -170,54 +159,17 @@
                             <div class="fbox-icon">
                                 <a href="#"><i class="icon-line-power"></i></a>
                             </div>
-                            <h3>HTML5 Video</h3>
-                            <p>Canvas provides support for Native HTML5 Videos that can be added to a Background.</p>
+                            <h3>Her Zaman Farklı Sonuçlar</h3>
                         </div>
 
                         <div class="feature-box topmargin" data-animate="fadeIn" data-delay="200">
                             <div class="fbox-icon">
                                 <a href="#"><i class="icon-line-check"></i></a>
                             </div>
-                            <h3>Endless Possibilities</h3>
-                            <p>Complete control on each &amp; every element that provides endless customization.</p>
+                            <h3>Güçlü Sistem Yaklaşımı</h3>
                         </div>
-
-                        <div class="feature-box topmargin" data-animate="fadeIn" data-delay="400">
-                            <div class="fbox-icon">
-                                <a href="#"><i class="icon-bulb"></i></a>
-                            </div>
-                            <h3>Light &amp; Dark Color Schemes</h3>
-                            <p>Change your Website's Primary Scheme instantly by simply adding the dark class.</p>
-                        </div>
-
                     </div>
 
-                </div>
-
-            </div>
-
-            <div class="row clearfix common-height">
-
-                <div class="col-md-6 center col-padding" style="background: url('/assets/theme/images/services/main-bg.jpg') center center no-repeat; background-size: cover;">
-                    <div>&nbsp;</div>
-                </div>
-
-                <div class="col-md-6 center col-padding" style="background-color: #F5F5F5;">
-                    <div>
-                        <div class="heading-block nobottomborder">
-                            <span class="before-heading color">Easily Understandable &amp; Customizable.</span>
-                            <h3>Rehberi Anlatan Videolu İçerik</h3>
-                        </div>
-
-                        <div class="center bottommargin">
-                            <a href="http://vimeo.com/101373765" data-lightbox="iframe" style="position: relative;">
-                                <img src="/assets/theme/images/services/video.jpg" alt="Video">
-                                <span class="i-overlay nobg"><img src="/assets/theme/images/icons/video-play.png" alt="Play"></span>
-                            </a>
-                        </div>
-                        <p class="lead nobottommargin">Democracy inspire breakthroughs, Rosa Parks; inspiration raise awareness natural resources. Governance impact; transformative donation philanthropy,
-                            respect reproductive.</p>
-                    </div>
                 </div>
 
             </div>

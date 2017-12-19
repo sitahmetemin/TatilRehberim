@@ -94,7 +94,7 @@
                                     </div>
                                 </div>
                                 <div class="product-desc alert alert-success center">
-                                    <div class="product-title"><h3><a href="/mekan-detay/{{ $mekan->id }}">{{ (strlen($mekan->ad) > 15 ? substr($mekan->ad, 0, 15).'...' : $mekan->ad) }}</a></h3></div>
+                                    <div class="product-title"><h3><a href="/mekan-detay/{{ $mekan->id }}">{!! (strlen($mekan->ad) > 15 ? substr($mekan->ad, 0, 15).'...' : $mekan->ad) !!}</a></h3></div>
                                     <div class="product-price">{{ substr($mekan->icerik, 0, 10) }}...</div>
                                     <hr>
                                     <div class="product-rating">
